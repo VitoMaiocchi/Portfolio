@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'VinaSans';
+    src: url('fonts/subset-VinaSans-Regular.woff2') format('woff2'),
+    url('fonts/subset-VinaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    background-color: rgb(233, 92, 172);
+    color: black;
+    height: 100%;
+    margin: 0;
+    transition: all 1.0s ease;
+  }
+
+  #start-page {
+    color: black;
+    background-color: rgb(233, 92, 172);
+  }
+
+  #projects-page {
+    color: rgb(233, 92, 172);
+    background-color: black;
+  }
+
+  .page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 1.0s ease;
+  }
+
+  .page.hidden {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  .title > p {
+    font-family: 'VinaSans', sans-serif;
+    font-size: 25vw;
+    line-height: 0.9;
+    padding-bottom: 5vw;
+  }
+  
+  .sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+   
+
+  .sections > div {
+    text-align: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .section.active {
+    background-color: rgb(240, 134, 194);
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .section-button {
+    display: inline-block;
+    width: auto;  
+    font-family: 'VinaSans', sans-serif;
+    font-size: 7vw;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
+  .section-button:hover {
+    color: rgb(82, 13, 53);
+    transition: all 0.3s ease;
+  }
+
+  .section.active > p {
+    color: rgb(46, 5, 29);
+  }
+
+  .section.active > p:hover {
+    color: rgb(126, 25, 84);
+    transition: all 0.3s ease;
+  }
+
+  .section-text {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+
+    font-family: "Noto Sans", serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(46, 5, 29);
+    max-width: 70vw;
+
+    transition: all 0.3s ease, opacity 0.2s ease;
+  }
+  
+  .section-text.visible {
+    opacity: 1;
+    max-height: 500px;
+    padding: 20px;
+    transition: all 0.7s ease, opacity 0.3s ease;
+  }
+  
+
+
+
+  .project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+   
+  .project-title > div {
+    text-align: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .project-title > div > p {
+    width: auto;  
+    font-family: 'Vina Sans', sans-serif;
+  }
+
+  #project-title-small {
+    text-align: left;
+    font-size: 2vw;
+    margin-left: 1vw;
+    line-height: 0.8;
+  }
+
+  #project-title {
+    font-size: 25vw;
+    line-height: 0.6;
+  }
+
+  #back-button {
+    display: inline-block;
+    font-size: 5vw;
+    cursor: pointer;
+    margin-top: 4vw;
+  }
+
+  #back-button:hover {
+    color: rgb(241, 157, 204);
+    transition: all 0.3s ease;
+  }
+
+
+  .project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .project > div {
+    display: flex;
+    overflow: hidden;
+    height: 90%;
+    width: 90%;
+    border-radius: 50px;
+  }
+
+  .video-background {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-text {
+    display: flex;
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    z-index: 2;
+    font-family: 'Vina Sans', sans-serif;
+  }
+
+  .project-text > div {
+    display: inline-flex;
+    height: fit-content;
+    flex-direction: column;
+    border-radius: 25px;
+    margin: 25px;
+    padding: 25px;
+  }
+
+  .project-name {
+    text-align: left;
+    font-size: 7vw;
+    line-height: 0.8;
+  }
+
+  .project-year {
+    text-align: left;
+    font-size: 2vw;
+  }
+
+  .project-details {
+    margin-top: 30px;
+    font-family: "Noto Sans", serif;
+    font-weight: 600;
+    font-size: 13px;
+    max-width: 500px;
+  }
+
+  .project-href {
+    font-family: "Noto Sans", serif;
+    font-weight: 600;
+    font-size: 13px;
+    max-width: 500px;
+    color: inherit;
+  }
+
+  #marching-cubes {
+    color: black;
+  }
+
+  #wm-text {
+    color: black;
+    background-color: rgb(233, 92, 172);
+  }
+
+  #durak {
+    color: white;
+  }
+
+  #durak-background > video {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  #durak-background {
+    background-color: rgb(222, 93, 93);
+  }
+
+  #durak-text {
+    background-color: rgba(0,0,0,0.5);
+  }
+
+
+  #map-app {
+    color: black;
+  }
+
+  #map-background > video {
+    z-index: 1;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  #map-background {
+    background-color: rgb(242.25, 229.5, 255);
+    justify-content: flex-end;
+  }

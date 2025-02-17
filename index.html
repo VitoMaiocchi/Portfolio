@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vito Maiocchi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,600;1,600&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page" id="start-page">
+        <div class="title">
+            <p>VITO<br>MAIOCCHI</p>
+        </div>
+    
+        <div class="sections">
+            <div>
+                <div class="section" id="about-section">
+                    <p class="section-button" id="about-button">ABOUT</p>
+                    <div class="section-text" id="about-text">
+                        <p>
+                            I am a programming and Linux enthusiast, as well as a Computational Science student at ETH Zürich.
+                            This site is dedicated to displaying a selection of my personal programming projects.
+                        </p>
+                    </div>
+                </div>
+                <div class="section">
+                    <p class="section-button" id="projects-button">PROJECTS</p>
+                </div>
+                <div class="section" id="contact-section">
+                    <p class="section-button" id="contact-button">CONTACT</p>
+                    <div class="section-text" id="contact-text">
+                        <p>
+                            vito.maiocchi@outlook.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page hidden" id="projects-page">
+        <div class="title">
+            <p>VITO<br>MAIOCCHI</p>
+        </div>
+    
+        <div class="project-title">
+            <div>
+                <p id="project-title-small">NON-EXHAUSTIVE COLLECTION OF PERSONAL</p>
+                <p id="project-title">PROJECTS</p>
+                <p id="back-button">BACK</p>
+            </div>
+        </div>
+
+        <div class="project" id="marching-cubes">
+            <div>
+                <video class="video-background" autoplay muted loop>
+                    <source src="mc.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+            <div class="project-text">
+                <div id="mc-text">
+                    <p class="project-name">MARCHING CUBES</p>
+                    <p class="project-year">2022</p>
+                    <p class="project-details">
+                        This is one of the earliest projects mentioned here. 
+                        Accordingly, it is also relatively simple. 
+                        Nonetheless, I chose to present it here at the top of the list for the simple reason of its visual appeal.
+                        <br>
+                        This was one of my first experiments with OpenGL as well as the C++ language.
+                        The objective is to visualize 3D Perlin noise.
+                        To generate a 3D mesh made out of triangles from the Perlin noise function, I implemented the Marching Cubes algorithm.
+                        This algorithm samples the 3D function at discrete points and constructs a mesh from that.
+                        The different colors indicate the normal of the mesh or, equivalently, the direction of the noise function gradient.
+                    </p>
+                    <a class="project-href" target="_blank" href="https://github.com/VitoMaiocchi/OpenGL-MarchingCubes">Link to the GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project" id="window-manager">
+            <div class="project-text" id="wm-text">
+                <div>
+                    <p class="project-name">WAYLAND COMPOSITOR</p>
+                    <p class="project-year">2023 - TODAY</p>
+                    <p class="project-details">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                    <a class="project-href" target="_blank" href="https://github.com/VitoMaiocchi/WaylandCompositor">Link to the GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project" id="durak">
+            <div id="durak-background">
+                <video id="durak-background" autoplay muted loop>
+                    <source src="durak.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+            <div class="project-text">
+                <div id="durak-text">
+                    <p class="project-name">DURAK</p>
+                    <p class="project-year">2024 - 2025</p>
+                    <p class="project-details">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                    <a class="project-href" target="_blank" href="https://github.com/VitoMaiocchi/DurakOnline">Link to the GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project" id="map-app">
+            <div id="map-background">
+                <video autoplay muted loop>
+                    <source src="map.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+            <div class="project-text">
+                <div id="map-text">
+                    <p class="project-name">WMTS ANDROID APP</p>
+                    <p class="project-year">2021</p>
+                    <p class="project-details">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                    <a class="project-href" target="_blank" href="https://github.com/VitoMaiocchi/Map-App">Link to the GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
